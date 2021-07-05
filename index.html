@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Did you try turning it off and on again?">
+		<meta name="author" content="Brandon Stobie">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/typed.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!--<link rel="shortcut icon" href="favicon.png">	-->	
+		<title>Brandon Stobie</title>
+	</head>
+	<body>
+			<div class="center">
+					<div class="window">
+				  		<div class="top">
+				    		<span class="dot" style="background:#ED594A;" onclick=""></span>
+				    		<span class="dot" style="background:#FDD800;" onclick=""></span>
+				    		<span class="dot" style="background:#5AC05A;" onclick=""></span>
+				  		</div>
+
+				  		<div class="wcontent">
+				    		<h1 style="white-space: pre-line" id="terminal"><span style="color:#5AC05A;" id="dollarSign">$ </span><span id="command"></span></h1>
+				  		</div>
+					</div>
+			</div>
+		<script type="text/javascript">
+			/*var typed = new Typed("#command", {
+				//500 1000 100 500
+			  strings: [`whoami ^1000 \n Brandon Stobie`], //$ whoami ^1 \n Brandon Stobie ^1 \n^1\n
+			    typeSpeed:50,//50,
+			    fadeOut: true,
+			  	 onStringTyped: function(pos, self) {start();self.stop()}
+			});*/
+			var d = new Date();
+			var now = d.getTime();
+			var hours = (now / (1000 * 60 * 60));
+			var b = 303984
+			var uptime = hours-b
+
+
+
+			var typed = new Typed('#command', {
+			  strings: ['fetchinfo ^800 \n `<span style="color:#FDD800;">User:</span> Brandon Stobie` ^250\n `<span style="color:#FDD800;">Build:</span> XY` ^250\n `<span style="color:#FDD800;">Host:</span> New Jersey` ^250\n `<span style="color:#FDD800;">Uptime:</span> ' + uptime.toFixed(2) +' hours` ^250\n `<span style="color:#FDD800;">Projects:</span> <a href="#">Coming Soon</a>`'],
+			  typeSpeed:80
+			});
+		</script>
+	</body>
+</html>
